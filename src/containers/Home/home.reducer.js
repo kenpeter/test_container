@@ -1,16 +1,21 @@
 // init state
 // action
-export default (state = {}, action) => {
+export default (state = {homeClick: 0}, action) => {
     switch (action.type) {
         case 'HOME_CLICK_ACTION':
 
-            // test
             console.log('-- reducer --');
             console.log(action);
+            console.log(state);
 
-            return {
-                result: action.payload
-            }
+            // we change state in reducer, by new obj
+            let obj = Object.assign({}, state, {
+                homeClick: action.payload
+            });
+
+            console.log(obj);
+
+            return obj;
         default:
             return state
     }

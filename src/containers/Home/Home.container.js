@@ -2,10 +2,10 @@ import { connect } from 'react-redux'
 import {homeClickAction} from './home.action';
 import Home from './Home';
 
-
-
 const mapStateToProps = state => {
-    return {}
+    return {
+        homeClick: state.homeClick
+    }
 }
 
 // const var

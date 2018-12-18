@@ -13,8 +13,6 @@ export default (state = {homeClick: 0}, action) => {
                 homeClick: action.payload
             });
 
-            console.log(obj);
-
             return obj;
         default:
             return state

@@ -1,3 +1,4 @@
+import React, {Component} from 'react';
 import { connect } from 'react-redux'
 import {homeClickAction} from './home.action';
 import Home from './Home';
@@ -27,4 +28,4 @@ const HomeContainer = connect(
     mapDispatchToProps
 )(Home);
 
-export default HomeContainer
+export default HomeContainer;
